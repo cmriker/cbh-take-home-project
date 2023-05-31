@@ -7,3 +7,10 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 3. Write up a brief (~1 paragraph) explanation of why you made the choices you did and why specifically your version is more "readable" than the original.
 
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
+
+## Your Explanation Here
+- Rename the `candidate` variable to `partitionKey` to make it more clear what it is
+- Set the default value of `partitionKey` when declaring the variable, rather than in the `if` statement
+- Utilize `return` blocks around the hash creation logic to avoid extra code execution
+- Organize the test cases into describes that match the main `if` statement logic
+- Nest the `typeof` check inside the `if` statement to avoid unnecessary code execution
